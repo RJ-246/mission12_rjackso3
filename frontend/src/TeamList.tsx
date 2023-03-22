@@ -7,6 +7,7 @@ import Card from "react-bootstrap/Card";
 let jsonTeams2 = data;
 let jsonTeams = jsonTeams2["teams"]
 
+// Formats the HTML for each team entry in the page
 class Team extends React.Component <any,any> {
     render(): React.ReactNode {
         const oneTeam = this.props;
@@ -24,6 +25,7 @@ class Team extends React.Component <any,any> {
     }
 }
 
+// Builds a list of all the teams in the JSON using the class
 function TeamList(){
     return (
         <div>
